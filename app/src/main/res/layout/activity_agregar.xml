@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/IngresarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarActivity">
+
+    <EditText
+        android:id="@+id/titulotxt"
+        android:layout_width="271dp"
+        android:layout_height="81dp"
+
+        android:layout_marginTop="16dp"
+        android:hint="Titulo del libro"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/autortxt"
+        android:layout_width="271dp"
+
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:hint="Nombre del Autor"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulotxt">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/pagestxt"
+        android:layout_width="271dp"
+
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:hint="Numero de Paginas"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/autortxt">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/editorialtxt"
+        android:layout_width="271dp"
+
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:hint="Editorial"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagestxt">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/descripciontxt"
+        android:layout_width="271dp"
+
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:hint="Descripcion"
+        android:paddingLeft="10dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editorialtxt">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/urltxt"
+        android:layout_width="271dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:hint="URL de la imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripciontxt" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urltxt"
+        app:layout_constraintVertical_bias="0.52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
