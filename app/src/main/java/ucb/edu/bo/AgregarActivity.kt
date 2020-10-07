@@ -15,7 +15,6 @@ class AgregarActivity : AppCompatActivity() {
         setContentView(R.layout.activity_agregar)
 
 
-
         btnIngresar.setOnClickListener()
         {
             val bookDao = AppRoomDatabase.getDatabase(applicationContext).bookDato()
